@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
-const A7MD = new Discord.Client();
+const client = new Discord.Client();
 let timer;
 console.log("BOT ONLINE");
 
-A7MD.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
     timer = Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000
   let words = [` 
   **
